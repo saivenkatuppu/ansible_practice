@@ -7,5 +7,7 @@
    trainer: sivakumar
   tasks:
   - name: print course details
+    vars:
+    course: devops
     ansible.builtin.debug:
      msg: "hello {{ course }}, course duration {{ duration }},trainer {{ trainer }}"
