@@ -1,9 +1,8 @@
 - name: play level varibles
-  hosts: local:vars
-  connection: local:vars
-  vars:
-   duration: 10 hr
-   trainer: sivakumar
+  hosts: local
+  connection: local
+  vars_files:
+  - course.yaml
   tasks:
   - name: print course details
     vars:
@@ -12,7 +11,5 @@
      msg: "hello {{ course }}, course duration {{ duration }},trainer {{ trainer }}"
 
   - name: print course details
-    vars:
-    
     ansible.builtin.debug:
      msg: "hello {{ course }}, course duration {{ duration }},trainer {{ trainer }}"   
