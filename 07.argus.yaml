@@ -1,6 +1,6 @@
 - name: play level varibles
-  hosts: local
-  connection: local
+  hosts: local:vars
+  connection: local:vars
   vars:
    duration: 10 hr
    trainer: sivakumar
