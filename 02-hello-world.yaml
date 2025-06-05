@@ -5,3 +5,7 @@
   - name: print the hello world
     ansible.builtin.debug: 
       msg: "hello world"
+
+  - name: print the hello world
+    ansible.builtin.debug: 
+      msg: "hello "
