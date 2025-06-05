@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-   course: ansible
+   course: ansible #global declaration
    duration: 10 hr
-   trainer: sivakumar
+   TRAINER: sivakumar
   tasks:
   - name: print course details
     ansible.builtin.debug:
