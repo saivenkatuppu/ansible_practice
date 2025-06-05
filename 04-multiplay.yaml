@@ -8,7 +8,7 @@
 
   - name: hello from play 2 task 2
     ansible.builtin.debug:
-     msg: "hello from play one task 1"
+     msg: "hello from play one task 2"
 
 - name: play2
   hosts: local
@@ -16,8 +16,8 @@
   tasks:
   - name: hello from play 2 task 1
     ansible.builtin.debug:
-     msg: "hello from play one task 1"
+     msg: "hello from play 2 task 1"
 
   - name: hello from play 2 task 2
     ansible.builtin.debug:
-     msg: "hello from play one task 2"
+     msg: "hello from play 2 task 2"
