@@ -1,6 +1,5 @@
 - name: play level varibles
-  hosts: local
-  connection: local
+  hosts: frontend
   tasks:
   - name: print course details
     ansible.builtin.debug:
