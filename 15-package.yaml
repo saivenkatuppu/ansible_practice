@@ -4,8 +4,8 @@
   tasks:
   - name: installing package
     ansible.builtin.package:
-     name: "hello {{ item }}"
-     state: installed
+       name: "{{ item }}"
+       state: installed
     loop:
     - nginx
     - zip
