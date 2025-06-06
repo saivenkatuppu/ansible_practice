@@ -1,7 +1,7 @@
-- name: gatheringfacts
+- name: gathering facts
   hosts: local
   conditions: local
   tasks:
-  - name: gatheringfacts
+  - name: print facts
     ansible.builtin.debug:
      msg: "{{ansible_facts}}"
