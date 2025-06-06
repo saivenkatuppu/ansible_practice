@@ -1,5 +1,5 @@
 - name: looping statements
-  host: local
+  hosts: local
   connection: local
   tasks:
   - name: loop passing 
