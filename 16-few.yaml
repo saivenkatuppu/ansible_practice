@@ -1,5 +1,5 @@
 - name: looping statements
-  hosts: frontend
+  hosts: frontend 
   become: yes
   tasks:
   - name: installing package
